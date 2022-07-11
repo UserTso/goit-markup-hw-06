@@ -286,68 +286,82 @@
     </main>
     <!-- Футер -->
     <footer class="site-footer">
-      <div class="container">
-        <ul class="footer">
-          <li class="footer-auth">
-            <a href="./index.html" class="logo link-block"
-              ><span class="logo-web">Web</span><span class="footer-studio">Studio</span></a
-            >
-            <address class="address">
-              <ul>
-                <li>
-                  <a
-                    class="footer-address"
-                    href="https://goo.gl/maps/VeayQojqGneW1Sk49"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="footer-link">
-                  <a class="footer-data" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="footer-link">
-                  <a class="footer-data" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-              </ul>
-            </address>
-          </li>
-          <li class="footer-web">
-            <div class="footer-net">
-              <h2 class="footer-subtitle">присоединяйтесь</h2>
-              <ul class="footer-listnet">
-                <li class="footer-itemnet">
-                  <a class="net-link f-link" href="">
-                    <svg class="net-icons f-icons" width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-itemnet">
-                  <a class="net-link f-link" href="">
-                    <svg class="net-icons f-icons" width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-itemnet">
-                  <a class="net-link f-link" href="">
-                    <svg class="net-icons f-icons" width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-itemnet">
-                  <a class="net-link f-link" href="">
-                    <svg class="net-icons f-icons" width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+      <div class="container footer">
+        <div class="footer-auth">
+          <a href="./index.html" class="logo link-block"
+            ><span class="logo-web">Web</span><span class="footer-studio">Studio</span>
+          </a>
+          <address class="address">
+            <ul>
+              <li>
+                <a
+                  class="footer-address"
+                  href="https://goo.gl/maps/VeayQojqGneW1Sk49"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-link">
+                <a class="footer-data" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer-link">
+                <a class="footer-data" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-net">
+          <h2 class="footer-subtitle">присоединяйтесь</h2>
+          <ul class="footer-listnet">
+            <li class="footer-itemnet">
+              <a class="net-link f-link" href="">
+                <svg class="net-icons f-icons" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-itemnet">
+              <a class="net-link f-link" href="">
+                <svg class="net-icons f-icons" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-itemnet">
+              <a class="net-link f-link" href="">
+                <svg class="net-icons f-icons" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-itemnet">
+              <a class="net-link f-link" href="">
+                <svg class="net-icons f-icons" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-letter">
+          <h2 class="footer-subtitle">Подпишитесь на рассылку</h2>
+          <form name="signup_form" autocomplete="on" novalidate>
+            <div>
+              <label class="footer-field">
+                <input class="footer-mail" type="email" name="email" placeholder="E-mail" />
+              </label>
+
+              <button class="btn-field" type="submit">
+                <span class="btn-field-text">Подписаться</span>
+                <svg class="telegram" width="24" height="24">
+                  <use href="./images/symbol-defs3.svg#icon-telegram"></use>
+                </svg>
+              </button>
             </div>
-          </li>
-        </ul>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

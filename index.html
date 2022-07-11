@@ -350,7 +350,6 @@
     <!-- Футер -->
     <footer class="site-footer">
       <div class="container footer">
-        <d></d>
         <div class="footer-auth">
           <a href="./index.html" class="logo link-block"
             ><span class="logo-web">Web</span><span class="footer-studio">Studio</span>
@@ -409,6 +408,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-letter">
+          <h2 class="footer-subtitle">Подпишитесь на рассылку</h2>
+          <form name="signup_form" autocomplete="on" novalidate>
+            <div>
+              <label class="footer-field">
+                <input class="footer-mail" type="email" name="email" placeholder="E-mail" />
+              </label>
+
+              <button class="btn-field" type="submit">
+                <span class="btn-field-text">Подписаться</span>
+                <svg class="telegram" width="24" height="24">
+                  <use href="./images/symbol-defs3.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -419,6 +435,47 @@
             <use href="./images/symbol-defs2.svg#icon-cross"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+        <form name="signup_form" autocomplete="on" novalidate>
+          <div class="modal-form">
+            <label class="modal-name" for="name">Имя</label>
+            <input class="modal-block" type="name" name="name" id="name" />
+          </div>
+
+          <div class="modal-form">
+            <label class="modal-name" for="tel">Телефон</label>
+            <input class="modal-block" type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="modal-form">
+            <label class="modal-name" for="mail">Почта</label>
+            <input class="modal-block" type="email" name="mail" id="mail" />
+          </div>
+
+          <div class="modal-form">
+            <label class="modal-name" for="">Комментарий</label>
+            <textarea
+              class="modal-block area"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal-check">
+            <input type="checkbox" name="" value="" id="" />
+            <label for=""
+              ><span class="text-checkbox"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="link-checkbox" href="">Условия договора</a></span
+              ></label
+            >
+          </div>
+
+          <button class="modal-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
