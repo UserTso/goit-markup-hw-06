@@ -435,46 +435,59 @@
             <use href="./images/symbol-defs2.svg#icon-cross"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
         <form name="signup_form" autocomplete="on" novalidate>
           <div class="modal-form">
-            <label class="modal-name" for="name">Имя</label>
-            <input class="modal-block" type="name" name="name" id="name" />
+            <label class="modal-name"
+              >Имя <input class="modal-input" type="name" name="name" />
+
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs5.svg#icon-person-black"></use>
+              </svg>
+            </label>
           </div>
 
           <div class="modal-form">
-            <label class="modal-name" for="tel">Телефон</label>
-            <input class="modal-block" type="tel" name="tel" id="tel" />
+            <label class="modal-name"
+              >Телефон <input class="modal-input" type="tel" name="tel" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs5.svg#icon-phone-black"></use>
+              </svg>
+            </label>
           </div>
 
           <div class="modal-form">
-            <label class="modal-name" for="mail">Почта</label>
-            <input class="modal-block" type="email" name="mail" id="mail" />
+            <label class="modal-name"
+              >Почта <input class="modal-input" type="email" name="mail" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs5.svg#icon-email-black"></use>
+              </svg>
+            </label>
           </div>
 
           <div class="modal-form">
-            <label class="modal-name" for="">Комментарий</label>
-            <textarea
-              class="modal-block area"
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Введите текст"
-            ></textarea>
+            <label class="modal-name" for=""
+              >Комментарий<textarea
+                class="modal-input area"
+                name=""
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
           </div>
-          <div class="modal-check">
-            <input type="checkbox" name="" value="" id="" />
-            <label for=""
-              ><span class="text-checkbox"
-                >Соглашаюсь с рассылкой и принимаю
+
+          <div class="modal-checkbox">
+            <label class="checkbox-label"
+              ><input class="checkbox" type="checkbox" name="hobby" value="reading" /><span
+                class="text-checkbox"
+              >
+                Соглашаюсь с рассылкой и принимаю
                 <a class="link-checkbox" href="">Условия договора</a></span
               ></label
             >
           </div>
 
-          <button class="modal-btn" type="submit">Отправить</button>
+          <button class="btn-form" type="submit">Отправить</button>
         </form>
       </div>
     </div>
