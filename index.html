@@ -431,38 +431,47 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-modal" data-modal-close>
-          <svg class="net-icons close" width="18px" height="18px">
+          <svg class="net-icons close" width="11px" height="11px">
             <use href="./images/symbol-defs2.svg#icon-cross"></use>
           </svg>
         </button>
         <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
-        <form name="signup_form" autocomplete="on" novalidate>
+        <form name="signup_form" autocomplete="on">
           <div class="modal-form">
             <label class="modal-name"
-              >Имя <input class="modal-input" type="name" name="name" required />
+              >Имя
+              <div class="modal-item">
+                <input class="modal-input" type="name" name="name" required />
 
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./images/symbol-defs5.svg#icon-person-black"></use>
-              </svg>
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs5.svg#icon-person-black"></use>
+                </svg>
+              </div>
             </label>
           </div>
 
           <div class="modal-form">
             <label class="modal-name"
-              >Телефон <input class="modal-input" type="tel" name="tel" required />
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./images/symbol-defs5.svg#icon-phone-black"></use>
-              </svg>
+              >Телефон
+              <div class="modal-item">
+                <input class="modal-input" type="tel" name="tel" required />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs5.svg#icon-phone-black"></use>
+                </svg>
+              </div>
             </label>
           </div>
 
           <div class="modal-form">
             <label class="modal-name"
-              >Почта <input class="modal-input" type="email" name="mail" required />
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./images/symbol-defs5.svg#icon-email-black"></use>
-              </svg>
+              >Почта
+              <div class="modal-item">
+                <input class="modal-input" type="email" name="mail" required />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs5.svg#icon-email-black"></use>
+                </svg>
+              </div>
             </label>
           </div>
 
@@ -478,13 +487,17 @@
 
           <div class="modal-checkbox">
             <label class="checkbox-label"
-              ><input class="checkbox" type="checkbox" name="hobby" value="reading" /><span
-                class="text-checkbox"
-              >
+              ><input class="checkbox" type="checkbox" name="hobby" value="reading" required />
+              <span class="text-checkbox-before">
+                <svg width="11px" height="8px">
+                  <use href="./images/symbol-defs4.svg#icon-vector-form"></use>
+                </svg>
+              </span>
+              <span class="text-checkbox">
                 Соглашаюсь с рассылкой и принимаю
                 <a class="link-checkbox" href="">Условия договора</a></span
-              ></label
-            >
+              >
+            </label>
           </div>
 
           <button class="btn-form" type="submit">Отправить</button>
