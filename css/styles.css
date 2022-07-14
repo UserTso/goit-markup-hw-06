@@ -46,19 +46,14 @@ h1,h2,h3,p,ul {
     border-bottom: 1px solid #ECECEC;
 }
 .main-heder,
-.nav-title {
+.site-nav {
     display: flex;
     align-items: center;
 }
 
-/* logo */
-.logo-web {
-    color: var(--bg-hover-logo);
-}
-.logo-studio {
-    color: #000000;
-}
-.logo {
+/* SITE-NAV__LOGO*/
+
+.site-nav__logo {
     margin-right: 93px;
 
     font-family: 'Raleway';
@@ -69,21 +64,30 @@ h1,h2,h3,p,ul {
         text-decoration: none;
 }
 
+.site-nav__logoweb {
+    color: var(--bg-hover-logo);
+}
+
+
+.site-nav__logostudio {
+    color: #000000;}
+
+
 /* link-nav */
-.nav {
+.site-nav__list {
     display: flex;
 }
 
 
-.nav .item:not(:last-child) {
+.site-nav__list .site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.item {
+.site-nav__item {
     position: relative;
 }
 
-.link-nav {
+.site-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -100,7 +104,7 @@ h1,h2,h3,p,ul {
                     0.2,
                     1);
         }
-.link-nav.current {
+.site-nav__link.current {
     color: var(--bg-hover-logo);
 }
 
@@ -116,24 +120,24 @@ h1,h2,h3,p,ul {
     border-radius: 2px;
 }
 
-.link-nav:hover,
-.link-nav:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
     color: var(--bg-hover-logo);
    
 }
 
-/* link-auth */
+/* LINK-AUTH */
 
-.auth {
+.site-nav__auth {
     display: flex;
     margin-left: auto;
 }
 
-.auth .auth-item + .auth-item {
+.site-nav__auth .site-nav__auitem + .site-nav__auitem {
     margin-left: 50px;
 }
 
-.link-auth {
+.site-nav__aulink {
 
 
     color: var(--secondary-text-color);
@@ -146,20 +150,20 @@ h1,h2,h3,p,ul {
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-auth:hover,
-.link-auth:focus {
+.site-nav__aulink:hover,
+.site-nav__aulink:focus {
     color: var(--bg-hover-logo);
     /* fill: var(--bg-hover-logo); */
 }
 
-.link-auth:hover .icon-auth, 
-.link-auth:focus .icon-auth {
+.site-nav__aulink:hover .site-nav__auicon, 
+.site-nav__aulink:focus .site-nav__auicon {
     fill: var(--bg-hover-logo);
    
 }
 
 
-.icon-auth {
+.site-nav__auicon {
    
     margin-right: 10px;
     fill: var(--secondary-text-color);
